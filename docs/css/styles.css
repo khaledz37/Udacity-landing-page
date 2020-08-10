@@ -1,5 +1,4 @@
 html {
-    scroll-behavior: smooth;
     user-select: none;
   }
 body {
@@ -300,6 +299,9 @@ section.your-active-class .landing__container::after {
     .nav-section{
         font-size: 14px;
     }
+    p{
+        font-size: 16px;
+    }
 }
 /*screen width for smartphones in landscape view*/
 @media only screen and (max-width: 480px){
@@ -312,6 +314,9 @@ section.your-active-class .landing__container::after {
     .nav-section{
         font-size: 13px;
     }
+    p{
+        font-size: 14px;
+    }
 }
 /*screen width for smartphones in potrait view*/
 @media only screen and (max-width: 320px){
@@ -322,6 +327,9 @@ section.your-active-class .landing__container::after {
         width: 50%;
     }
     .nav-section{
+        font-size: 12px;
+    }
+    p{
         font-size: 12px;
     }
 }

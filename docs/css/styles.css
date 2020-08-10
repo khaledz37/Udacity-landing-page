@@ -349,6 +349,78 @@ section.your-active-class .landing__container::after {
         font-size: 11px;
     }
 }
+@media only screen and (max-height: 1366px){
+    #sections{
+        width: 50%;
+    }
+    #btn{
+        font-size: 30px;
+    }
+    #newsection{
+        width: 50%;
+        font-size: 30px;
+    }
+    .nav-section{
+        font-size: 15px;
+    }
+    p{
+        font-size: 28px;
+    }
+}
+@media only screen and (max-height: 1024px){
+    #sections{
+        width: 50%;
+    }
+    #btn{
+        font-size: 15px;
+    }
+    #newsection{
+        width: 50%;
+        font-size: 15px;
+    }
+    .nav-section{
+        font-size: 13px;
+    }
+    p{
+        font-size: 20px;
+    }
+}
+@media only screen and (max-height: 835px){
+    #sections{
+        width: 50%;
+    }
+    #btn{
+        font-size: 13px;
+    }
+    #newsection{
+        width: 50%;
+        font-size: 13px;
+    }
+    .nav-section{
+        font-size: 11px;
+    }
+    p{
+        font-size: 11px;
+    }
+}
+@media only screen and (max-height: 600px max-width 450px){
+    #sections{
+        width: 50%;
+    }
+    #btn{
+        font-size: 8px;
+    }
+    #newsection{
+        width: 50%;
+        font-size: 8px;
+    }
+    .nav-section{
+        font-size: 7px;
+    }
+    p{
+        font-size: 7px;
+    }
+}
 /* Section Active Styles Keyframe Animations */
 @keyframes rotate {
 	from {

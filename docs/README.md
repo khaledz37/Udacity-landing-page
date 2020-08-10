@@ -2,7 +2,7 @@
 
 ## Table of Contents
 
-* [Instructions](#instructions)
+* [Introduction](#Introduction)
 
 ## Introduction
 

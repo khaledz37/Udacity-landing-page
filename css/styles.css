@@ -46,9 +46,8 @@ li{
     padding: 0;
     margin: 0 auto;
 }
-li a{
-    display: block;
-    width: 100%;
+li:hover{
+    background-color: orange;
 }
 /*when hovering the scroll to top button*/
 #to-top:hover{
@@ -77,7 +76,7 @@ li a{
 .nav-section{
     text-decoration: none;
     color: white;
-    font-size: 22px;
+    font-size: 15px;
     outline: none;
     padding: 12px 22px;
 }
@@ -298,6 +297,9 @@ section.your-active-class .landing__container::after {
     #newsection{
         width: 40%;
     }
+    .nav-section{
+        font-size: 14px;
+    }
 }
 /*screen width for smartphones in landscape view*/
 @media only screen and (max-width: 480px){
@@ -307,6 +309,9 @@ section.your-active-class .landing__container::after {
     #newsection{
         width: 50%;
     }
+    .nav-section{
+        font-size: 13px;
+    }
 }
 /*screen width for smartphones in potrait view*/
 @media only screen and (max-width: 320px){
@@ -315,6 +320,9 @@ section.your-active-class .landing__container::after {
     }
     #newsection{
         width: 50%;
+    }
+    .nav-section{
+        font-size: 12px;
     }
 }
 /* Section Active Styles Keyframe Animations */

@@ -323,8 +323,12 @@ section.your-active-class .landing__container::after {
     #sections{
         width: 50%;
     }
+    #btn{
+        font-size: 14px;
+    }
     #newsection{
         width: 50%;
+        font-size: 14px;
     }
     .nav-section{
         font-size: 12px;

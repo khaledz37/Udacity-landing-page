@@ -83,8 +83,7 @@ function new_sections() {
     /*declaring variables*/
     let sec = 'section' + j;
     const main = document.querySelector('main'), sections_btn = document.getElementById('sections'), btn1 = document.getElementById('btn'), ul = document.querySelector('ul'), new_section = document.createElement('section'), new_div = document.createElement('div'), new_h2 = document.createElement('span'), new_p = document.createElement('p'),
-        new_p2 = document.createElement('p'),
-        new_a = document.createElement('a'), new_li = document.createElement('li');
+    new_p2 = document.createElement('p'), new_li = document.createElement('li');
     j++;
     new_section.id = 'section' + j;
     if (j == 1) { document.getElementById('btn').style.display = 'flex' };
@@ -98,18 +97,17 @@ function new_sections() {
     new_section.className = 'ss';
     new_div.className = "landing__container";
     new_h2.className = 'collapse';
-    new_a.className = "nav-section";
+    new_li.className = "nav-section";
     ul.insertAdjacentElement("beforeend", new_li);
-    new_li.insertAdjacentElement("beforeend", new_a);
     /*adding functions to some elements */
     let coll = 'collapse(' + j + ')';
     new_h2.setAttribute('onclick', coll);
     let ac = 'active(' + j + ',this)';
-    new_a.setAttribute('onclick', ac);
+    new_li.setAttribute('onclick', ac);
     /*adding text content to elements*/
     new_h2.textContent = "Section " + j + " -";
     new_p.textContent = p1;
     new_p2.textContent = p2;
-    new_a.textContent = 'section ' + j;
+    new_li.textContent = 'section ' + j;
     btn1.textContent = j + ' + Sections';
 }

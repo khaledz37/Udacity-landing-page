@@ -121,6 +121,9 @@ li:hover{
     margin: 0 auto;
     border-radius: 0px 0px 20px 20px;
 }
+#sections:hover #ddc{
+    display: flex;
+}
 .collapse{
     font-size: 40px;
     font-weight: bold;
@@ -275,8 +278,8 @@ section:nth-of-type(3n + 1) .landing__container::after {
 /* Section Active Styles */
 /* Note: your-active-class class is applied through javascript. You should update the class here and in the index.html to what you set in your javascript file.  */
 section.your-active-class {
-    background: rgb(0, 0, 0);
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.479) 0%, rgba(0, 0, 0, 0.699) 100%);
+    background: rgba(0, 0, 0, 0.288);
+    background: linear-gradient(0deg, rgba(24, 24, 24, 0.26) 0%, rgba(0, 0, 0, 0.301) 100%);
 }
 
 section.your-active-class .landing__container::before {

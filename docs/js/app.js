@@ -49,23 +49,14 @@ function collapse(evt) {
         y.textContent = 'Section ' + evt + ' +'
     }
 }
-/*clicking on the navigation bar button the dropdown content is shown/hidden */
-function showddc() {
-    let ddc = document.getElementById('ddc');
-    if (ddc.style.display == 'flex') {
-        ddc.style.display = 'none';
-    } else {
-        ddc.style.display = 'flex';
-    }
-}
 /*set section on screen active */
 document.addEventListener('scroll', function () { activ() })
-function activ(){
-    let secc=document.getElementsByClassName('ss');
-    for (let i = 0 ; i< secc.length ; i++){
-        let sse= 'section' + (i+1)
-        let dd=document.getElementById(sse).getBoundingClientRect()
-        if(dd.top>=0 && dd.bottom <=window.innerHeight && dd.right <= window.innerWidth){
+function activ() {
+    let secc = document.getElementsByClassName('ss');
+    for (let i = 0; i < secc.length; i++) {
+        let sse = 'section' + (i + 1)
+        let dd = document.getElementById(sse).getBoundingClientRect()
+        if (dd.top >= 0 && dd.bottom <= window.innerHeight && dd.right <= window.innerWidth) {
             activscrolling(i)
         }
     }
@@ -98,7 +89,7 @@ function new_sections() {
         new_p2 = document.createElement('p'), new_li = document.createElement('li');
     j++;
     new_section.id = 'section' + j;
-    if (j == 1) { document.getElementById('btn').style.display = 'flex'};
+    if (j == 1) { document.getElementById('btn').style.display = 'flex' };
     /*adding new elements */
     main.insertAdjacentElement("beforeend", new_section);
     /*get element position */
@@ -124,7 +115,7 @@ function new_sections() {
     new_li.textContent = 'section ' + j;
     btn1.textContent = j + ' + Sections';
 }
-function activscrolling(evt){
+function activscrolling(evt) {
     const z = document.getElementsByClassName("ss"), z1 = document.getElementsByClassName('nav-section');
     /*adding  active class to the selected section in the navigation menu */
     for (let i = 0; i < z1.length; i++) {

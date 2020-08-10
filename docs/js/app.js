@@ -88,6 +88,8 @@ function new_sections() {
     const main = document.querySelector('main'), sections_btn = document.getElementById('sections'), btn1 = document.getElementById('btn'), ul = document.querySelector('ul'), new_section = document.createElement('section'), new_div = document.createElement('div'), new_h2 = document.createElement('span'), new_p = document.createElement('p'),
         new_p2 = document.createElement('p'), new_li = document.createElement('li');
     j++;
+    const f=document.getElementsByClassName('page__footer')[0];
+    f.style.position = "relative";
     new_section.id = 'section' + j;
     if (j == 1) { document.getElementById('btn').style.display = 'flex' };
     /*adding new elements */
